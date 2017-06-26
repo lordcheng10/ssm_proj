@@ -13,8 +13,6 @@
         <module>ssm_service</module>
         <module>ssm_web</module>
         <module>ssm_base</module>
-        <module>sem_web</module>
-        <module>sem_web2</module>
     </modules>
 
     <dependencies>

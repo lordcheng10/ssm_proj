@@ -4,13 +4,19 @@ import com.jd.ssm.dao.order.OrderDao;
 import com.jd.ssm.model.Order;
 import com.jd.ssm.service.order.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service("orderService")
 public class OrderServiceImp implements OrderService {
+	private  OrderDao orderDao;
+
 	@Autowired
-	private OrderDao orderDao;
-	
+	public void setOrderDao(OrderDao orderDao) {
+		this.orderDao = orderDao;
+	}
+
 	@Override
 	public Order getOrderById(Integer id) {
 		return orderDao.selectByPrimaryKey(id);
