@@ -6,17 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sem_web" />
         <module name="ssm_base" />
         <module name="ssm_dao" />
-        <module name="ssm_proj" />
         <module name="ssm_service" />
+        <module name="ssm_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="sem_web" target="1.5" />
-      <module name="sem_web2" target="1.5" />
-      <module name="ssm" target="1.5" />
       <module name="ssm_base" target="1.5" />
       <module name="ssm_dao" target="1.5" />
       <module name="ssm_proj" target="1.5" />

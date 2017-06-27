@@ -1,5 +1,7 @@
 package com.jd.ssm.model;
 
+import com.jd.ssm.util.DateUtils;
+
 import java.util.Date;
 
 public class Order {
@@ -37,8 +39,8 @@ public class Order {
         this.number = number == null ? null : number.trim();
     }
 
-    public Date getCreatetime() {
-        return createtime;
+    public String getCreatetime() {
+        return DateUtils.getDateString(createtime);
     }
 
     public void setCreatetime(Date createtime) {

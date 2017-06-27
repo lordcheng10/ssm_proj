@@ -1,17 +1,20 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ssm_web:war exploded">
-    <output-path>$PROJECT_DIR$/ssm_web/target/ssm_web-1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/ssm_web/target/ssm_web</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="ssm_web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="ssm_dao-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="ssm_dao" />
+          <element id="archive" name="ssm_base-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ssm_base" />
           </element>
           <element id="archive" name="ssm_service-1.0-SNAPSHOT.jar">
             <element id="module-output" name="ssm_service" />
+          </element>
+          <element id="archive" name="ssm_dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ssm_dao" />
           </element>
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.0" />
@@ -49,7 +52,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/ssm_web/target/ssm_web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/ssm_web/target/ssm_web/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="ssm_web/web/Web" />
     </root>
