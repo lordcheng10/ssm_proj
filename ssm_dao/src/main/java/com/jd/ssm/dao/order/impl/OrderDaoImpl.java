@@ -2,6 +2,7 @@ package com.jd.ssm.dao.order.impl;
 
 import com.jd.ssm.dao.order.OrderDao;
 import com.jd.ssm.model.Order;
+import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import java.util.List;
 @Repository
 public class OrderDaoImpl implements OrderDao{
     @Resource
-    private SqlSessionTemplate ssmSqlSession;
+    private SqlSession ssmSqlSession;
 
     public int deleteByPrimaryKey(Integer id) {
         return 0;
